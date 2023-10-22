@@ -54,4 +54,12 @@ class UserRepository {
             $user->delete();
         return $user;
     }
+
+    public function getUsersForDropDown() {
+        if(auth()->user()->role == 'Admin') {
+            return $this->user->where('role', 'User')->select('id', 'name')->get();
+        }
+
+        return [];
+    }
 }

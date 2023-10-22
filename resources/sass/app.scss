@@ -8,38 +8,41 @@
 @import 'bootstrap/scss/bootstrap';
 
 
-    .pagination {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-    }
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
 
-    .page-item {
-        list-style: none;
-        margin: 0 5px;
-    }
+.page-item {
+    list-style: none;
+    margin: 0 5px;
+}
 
-    .page-link {
-        background-color: #007bff;
-        border-color: #007bff;
-        color: #fff;
-    }
+.page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
 
-    .page-link:hover {
-        background-color: #0056b3;
-        border-color: #0056b3;
-        color: #fff;
-    }
+.page-link:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    color: #fff;
+}
 
-    .page-item.active .page-link {
-        background-color: #0056b3;
-        border-color: #0056b3;
-        color: #fff;
-    }
+.page-item.active .page-link {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    color: #fff;
+}
 
-    .page-item.disabled .page-link {
-        background-color: #f8f9fa;
-        border-color: #dee2e6;
-        color: #868e96;
-    }
+.page-item.disabled .page-link {
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
+    color: #868e96;
+}
 
+.nav-item.active {
+    border-bottom: 2px solid #007BFF; 
+}

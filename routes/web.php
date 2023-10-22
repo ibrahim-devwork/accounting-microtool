@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\CsvToOfxConversionController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Middleware\AdminMiddleware;
@@ -44,5 +45,12 @@ Route::middleware(['auth'])->group(function () {
             Route::delete('/users/{id}',    'destroy')->name('users.destroy');
         });
     });
+
+    # Process list routes
+    Route::get('/process-list',         [CsvToOfxConversionController::class, 'index'])->name('process-list');
+    Route::get('/process-list/create',  [CsvToOfxConversionController::class, 'create'])->name('process-list.create');
+    Route::post('/process-list/store',  [CsvToOfxConversionController::class, 'store'])->name('process-list.store');
+    Route::delete('/process-list/{id}', [CsvToOfxConversionController::class, 'destroy'])->name('process-list.destroy');
+    Route::post('/process-list',        [CsvToOfxConversionController::class, 'search'])->name('process-list.search');
 
 });

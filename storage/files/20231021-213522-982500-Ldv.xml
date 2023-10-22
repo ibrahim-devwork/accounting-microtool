@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OFX>
+  <SIGNONMSGSRSV1>
+    <SONRS>
+      <STATUS>
+        <CODE>0</CODE>
+        <SEVERITY>INFO</SEVERITY>
+      </STATUS>
+      <DTSERVER>20231020120000[-4:EDT]</DTSERVER>
+      <LANGUAGE>ENG</LANGUAGE>
+    </SONRS>
+  </SIGNONMSGSRSV1>
+  <BANKMSGSRSV1>
+    <STMTTRNRS>
+      <TRNUID>1001</TRNUID>
+      <STATUS>
+        <CODE>0</CODE>
+        <SEVERITY>INFO</SEVERITY>
+      </STATUS>
+      <STMTRS>
+        <CURDEF>USD</CURDEF>
+        <BANKACCTFROM>
+          <BANKID>123456789</BANKID>
+          <ACCTID>987654321</ACCTID>
+          <ACCTTYPE>CHECKING</ACCTTYPE>
+        </BANKACCTFROM>
+        <BANKTRANLIST>
+          <DTSTART>20231001000000[-4:EDT]</DTSTART>
+          <DTEND>20231020000000[-4:EDT]</DTEND>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20231015000000[-4:EDT]</DTPOSTED>
+            <TRNAMT>-500.00</TRNAMT>
+            <FITID>100001</FITID>
+            <NAME>Expense 1</NAME>
+            <MEMO>Office Supplies</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20231015120000[-4:EDT]</DTPOSTED>
+            <TRNAMT>-300.00</TRNAMT>
+            <FITID>100002</FITID>
+            <NAME>Expense 2</NAME>
+            <MEMO>Utilities</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT</TRNTYPE>
+            <DTPOSTED>20231018000000[-4:EDT]</DTPOSTED>
+            <TRNAMT>1000.00</TRNAMT>
+            <FITID>100003</FITID>
+            <NAME>Income 1</NAME>
+            <MEMO>Client Payment</MEMO>
+          </STMTTRN>
+          <!-- Add more transactions as needed -->
+        </BANKTRANLIST>
+        <LEDGERBAL>
+          <BALAMT>3500.00</BALAMT>
+          <DTASOF>20231020000000[-4:EDT]</DTASOF>
+        </LEDGERBAL>
+      </STMTRS>
+    </STMTTRNRS>
+  </BANKMSGSRSV1>
+</OFX>
