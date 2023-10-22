@@ -32,7 +32,9 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
     # Home route
-    Route::get('/home',    [HomeController::class, 'index'])->name('home');
+    Route::get('/home',                 [HomeController::class, 'index'])->name('home');
+    Route::get('/home/download/{file}', [HomeController::class, 'download'])->name('download');
+    Route::post('/home',                [HomeController::class, 'search'])->name('home.search');
 
     # Admin routes
     Route::middleware([AdminMiddleware::class])->group(function () {
