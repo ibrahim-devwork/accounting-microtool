@@ -30,7 +30,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-                        {{-- Links --}}
+                        <li class="nav-item {{ request()->is('process-list') ? 'active' : '' }}">
+                            <a class="nav-link" href="{{ route('process-list') }}">{{ __('Process list') }}</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
