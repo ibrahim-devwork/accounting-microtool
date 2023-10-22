@@ -1,3 +1,4 @@
+
 # Accounting microtool
 This project to convert ofx files to CSV files. Let me explain this project to you:
     
@@ -13,11 +14,11 @@ This project to convert ofx files to CSV files. Let me explain this project to y
 	- Git
 
 ## Steps to run this project :
-	- First of all you need to clone this project from GitHub from this link: https://github.com/ibrahim-devwork/accounting-microtool.
-	- After clone this project, you need to run install composer command in this project to install all dependencies.
 
-	- And then you need to create a new database and put its host, username, database name and port in the .env file and after that you can run "php artisan migrate -seed" to create the database tables and insert admin in the users table.	
-	- Now you can run "php artisan serve" to run the project and you will find the admin information in UserSeeder so you can login.
+   - First of all you need to clone this project from this repository.
+   - After clone this project, you need to run **composer install** command in this project to install all dependencies.
+   - And then you need to create a new database and put its host, username, database name and port in the .env file and after that you can run **php artisan migrate -seed** to create the database tables and insert admin in the users table.	
+   - Now you can run **php artisan serve** to run the project and you will find the admin information in UserSeeder so you can login.
 
 ## Noticeable :
-	- If you want to update or develop this project then you need to install Nodejs and when working on it run “npm run dev” and when all updates are done run “npm run build”.
+   - If you want to update or develop this project then you need to install Nodejs and when working on it run **npm run dev** and when all updates are done run **npm run build**.
