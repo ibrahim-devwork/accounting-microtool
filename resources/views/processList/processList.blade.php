@@ -32,7 +32,7 @@
                         @csrf
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" name="search" placeholder="Search items"  value="{{ $search ?? '' }}">
-                            <button class="btn btn-primary" type="submit">Search</button>
+                            <button class="btn btn-success" type="submit">Search</button>
                         </div>
                     </form>
                 </div>
