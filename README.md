@@ -2,7 +2,7 @@
 This project to convert ofx files to CSV files. Let me explain this project to you:
     
    - When you log in as an administrator, you can create users and you can create a new process for any user and you can see all the processes for all users, meaning you have all the permissions, but when you log in as a user, you can only create your own process and see it and delete it if you want. After creating a new process, you can see Its status is like “Pending”, “In Progress” or “Completed”, and when you need to download the CSV file, just open the dashboard page, where you can see all the process completed and download any CSV file you want.
-    - Old deletion process: This feature deletes files that are more than 3 days old, and this is automatic according to the system
+     - Old deletion process: This feature deletes files that are more than 3 days old, and this is automatic according to the system
 
 ## Requirements : 
 	- Web server
